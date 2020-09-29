@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+// font-family: 'DM Sans', sans-serif;
+
+.heading-large {
+  font-size: 4rem;
+  line-height: 1.2em;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.heading-medium {
+  font-size: 2.4rem;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.heading-small {
+  font-size: 1.8rem;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.heading-xsmall {
+  font-size: 1.2rem;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.btn-black {
+  background: $black 0% 0% no-repeat padding-box;
+  width: 160px;
+  &:hover {
+    background: $light-grey 0% 0% no-repeat padding-box;
+    cursor: pointer;
+  }
+  .heading-xsmall {
+    line-height: 2em;
+  }
+}
+
+.btn-white {
+  background: $white 0% 0% no-repeat padding-box;
+  width: 160px;
+  &:hover {
+    background: $light-grey 0% 0% no-repeat padding-box;
+    cursor: pointer;
+  }
+  .heading-xsmall {
+    line-height: 2em;
+  }
+}
+
+.heading-white {
+  color: $white;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
