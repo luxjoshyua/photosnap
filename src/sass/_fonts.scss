@@ -32,6 +32,10 @@
   letter-spacing: 2px;
 }
 
+.heading-white {
+  color: $white;
+}
+
 .btn-black {
   background: $black 0% 0% no-repeat padding-box;
   width: 160px;
@@ -56,8 +60,11 @@
   }
 }
 
-.heading-white {
-  color: $white;
+.btn-arrow {
+  .heading-xsmall {
+  }
+  .arrow {
+  }
 }
 
 ul,

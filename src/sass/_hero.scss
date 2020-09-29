@@ -1,0 +1,56 @@
+.hero {
+  .grid-container {
+    display: grid;
+    column-gap: 0; // this is default browser setting
+    .copy-outer {
+      background-color: red;
+      height: 100%;
+      width: 100%;
+      .copy-inner {
+        padding: 175px 0;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+    .img-outer {
+      background-color: greenyellow;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &.row-one {
+      grid-template-columns: 45% 55%;
+      .copy-outer {
+        background-color: $black;
+        .copy-inner {
+          .heading-large,
+          .copy {
+            color: $white;
+          }
+          .heading-large {
+            padding-bottom: 20px;
+          }
+          .copy {
+            opacity: 0.6;
+            padding-bottom: 45px;
+          }
+          .btn-arrow {
+            .heading-xsmall {
+              color: $white;
+              padding-right: 30px;
+            }
+            .arrow {
+            }
+          }
+        }
+      }
+      .img-outer {
+        background-image: url("../assets/images/home/desktop/create-and-share.jpg");
+      }
+    }
+
+    &.row-two {
+    }
+  }
+}
