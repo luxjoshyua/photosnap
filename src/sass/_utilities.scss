@@ -11,5 +11,8 @@
       linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.498039)) 0 0
       no-repeat padding-box;
     // background: #efefef 0% 0% no-repeat padding-box;
+    background: transparent
+      linear-gradient(180deg, #00000000 0%, #000000a9 100%) 0% 0% no-repeat
+      padding-box;
   }
 }
