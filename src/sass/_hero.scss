@@ -28,7 +28,7 @@
       background-position: center center;
     }
     &.row-one {
-      grid-template-columns: 45% 55%;
+      grid-template-columns: 1.5fr 2fr;
       .copy-outer {
         background-color: $black;
         .copy-inner {
@@ -51,20 +51,19 @@
       }
     }
     &.row-two {
-      grid-template-columns: 55% 45%;
+      grid-template-columns: 2fr 1.5fr;
       .img-outer {
         background-image: url("../assets/images/home/desktop/beautiful-stories.jpg");
       }
     }
     &.row-three {
-      grid-template-columns: 45% 55%;
+      grid-template-columns: 1.5fr 2fr;
       .img-outer {
         background-image: url("../assets/images/home/desktop/designed-for-everyone.jpg");
       }
     }
     &.row-four {
-      grid-template-columns: 25% 25% 25% 25%;
-
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       .tile {
         height: 100%;
         width: 100%;
@@ -109,7 +108,6 @@
             }
           }
         }
-
         &.tile-one {
           background-image: url("../assets/images/stories/desktop/mountains.jpg");
         }
@@ -121,6 +119,41 @@
         }
         &.tile-four {
           background-image: url("../assets/images/stories/desktop/architecturals.jpg");
+        }
+      }
+    }
+  }
+
+  .row-five {
+    .inner {
+      max-width: 1140px;
+      padding: 120px 0;
+      @include centreContent;
+      .tile {
+        max-width: 350px;
+        min-height: 240px;
+        padding-right: 30px;
+        &:nth-of-type(3) {
+          padding-right: 0;
+        }
+        .copy-outer {
+          text-align: center;
+          @include centreContent;
+          flex-direction: column;
+          img {
+            // height: 100px;
+            // width: 60px;
+          }
+          .heading-small {
+            padding-top: 50px;
+            padding-bottom: 20px;
+            text-transform: capitalize;
+          }
+          .heading-second {
+            padding-top: 80px;
+          }
+          p {
+          }
         }
       }
     }
