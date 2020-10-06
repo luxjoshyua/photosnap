@@ -51,12 +51,30 @@
             color: $white;
             padding-bottom: 20px;
             a {
+              &:hover {
+                opacity: 0.6;
+                color: inherit;
+              }
             }
           }
         }
       }
     }
     .right {
+      display: flex;
+      flex-direction: column;
+      color: $white;
+      .btn-arrow {
+        padding-bottom: 100px;
+        .heading-xsmall {
+          padding-right: 20px;
+        }
+      }
+      .copyright {
+        p {
+          opacity: 0.5;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,5 @@
 .hero {
   .grid-container {
-    display: grid;
-    column-gap: 0; // this is default browser setting
     .copy-outer {
       height: 100%;
       width: 100%;
@@ -62,66 +60,6 @@
         background-image: url("../assets/images/home/desktop/designed-for-everyone.jpg");
       }
     }
-    &.row-four {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      .tile {
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: relative;
-        .copy-outer {
-          position: relative;
-          height: 100%;
-          width: 100%;
-          .copy-inner {
-            padding: 460px 0 40px;
-            .heading-small,
-            .heading-xsmall,
-            .btn-arrow span {
-              text-transform: capitalize;
-              color: $white;
-            }
-            .heading-small {
-              padding-bottom: 10px;
-            }
-            .heading-xsmall {
-              font-weight: 400;
-              padding-bottom: 20px;
-            }
-            .author {
-              &::after {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 1px;
-                background-color: $white;
-                opacity: 0.25;
-                margin-top: 20px;
-              }
-            }
-            .btn-arrow {
-              justify-content: space-between;
-              .arrow {
-              }
-            }
-          }
-        }
-        &.tile-one {
-          background-image: url("../assets/images/stories/desktop/mountains.jpg");
-        }
-        &.tile-two {
-          background-image: url("../assets/images/stories/desktop/cityscapes.jpg");
-        }
-        &.tile-three {
-          background-image: url("../assets/images/stories/desktop/18-days-voyage.jpg");
-        }
-        &.tile-four {
-          background-image: url("../assets/images/stories/desktop/architecturals.jpg");
-        }
-      }
-    }
   }
 
   .row-five {
@@ -140,10 +78,7 @@
           text-align: center;
           @include centreContent;
           flex-direction: column;
-          img {
-            // height: 100px;
-            // width: 60px;
-          }
+
           .heading-small {
             padding-top: 50px;
             padding-bottom: 20px;
@@ -152,10 +87,126 @@
           .heading-second {
             padding-top: 80px;
           }
-          p {
-          }
         }
       }
     }
   }
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 0; // this is default browser setting
+}
+
+.stories-wrapper {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .tile {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    &:hover {
+      transform: translate(0, -35px);
+      transition: all 0.5s ease-in-out;
+      border-bottom: 5px solid transparent;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 10px;
+        @include colorGradient;
+      }
+    }
+    .copy-outer {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      .copy-inner {
+        padding: 460px 0 40px;
+        max-width: 400px;
+        margin: 0 auto;
+        .heading-small,
+        .heading-xsmall,
+        .btn-arrow span {
+          text-transform: capitalize;
+          color: $white;
+        }
+        .heading-small {
+          padding-bottom: 10px;
+        }
+        .heading-xsmall {
+          font-weight: 400;
+          padding-bottom: 20px;
+        }
+        .author {
+          &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $white;
+            opacity: 0.25;
+            margin-top: 20px;
+          }
+        }
+        .btn-arrow {
+          justify-content: space-between;
+        }
+      }
+    }
+    &.tile-one {
+      background-image: url("../assets/images/stories/desktop/mountains.jpg");
+    }
+    &.tile-two {
+      background-image: url("../assets/images/stories/desktop/cityscapes.jpg");
+    }
+    &.tile-three {
+      background-image: url("../assets/images/stories/desktop/18-days-voyage.jpg");
+    }
+    &.tile-four {
+      background-image: url("../assets/images/stories/desktop/architecturals.jpg");
+    }
+  }
+}
+
+.stories-hero {
+  background: url("../assets/images/stories/desktop/moon-of-appalacia.jpg")
+    no-repeat center center;
+  background-size: cover;
+  .inner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    .copy-outer {
+      padding: 240px 0 240px 160px;
+      color: $white;
+      max-width: 500px;
+      .heading-top {
+        padding-bottom: 32px;
+      }
+      .date-author {
+        padding-bottom: 20px;
+      }
+      .heading-large {
+        padding-bottom: 20px;
+      }
+      .date {
+        padding-right: 12px;
+      }
+      .body-copy {
+        padding-bottom: 24px;
+      }
+      .btn-arrow {
+        .heading-xsmall {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+.stories-wrapper {
 }

@@ -23,3 +23,7 @@
   align-items: center;
   margin: 0 auto;
 }
+
+@mixin colorGradient {
+  background: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+}
