@@ -1,0 +1,82 @@
+#features {
+    .row-one {
+        .img-outer {
+            background-image: url("../assets/images/features/desktop/hero-features.jpg");
+        }
+    }
+}
+
+#features-tiles {
+    .tiles-wrapper {
+        .inner {
+            padding: 160px 0;
+            .tile {
+                padding-bottom: 100px;
+                .copy-outer {
+                    .heading-second {
+                        padding-top: 90px;
+                    }
+                    .heading-third {
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.invite-block {
+    background: url("../assets/images/shared/desktop/bg-beta.jpg") no-repeat
+        center center;
+    background-size: cover;
+    .inner {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 0;
+        .heading-block {
+            max-width: 400px;
+        }
+    }
+}
+
+#pricing {
+    .grid-container {
+        .img-outer {
+            background-image: url("../assets/images/pricing/desktop/hero.jpg");
+        }
+    }
+}
+
+.pricing-tiles {
+    background-color: aquamarine;
+    .inner {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        .draggable-wrapper {
+        }
+        .tiles-wrapper {
+            .pricing-tile {
+                background-color: $grey;
+                .inner {
+                    @include centreContent;
+                    flex-direction: column;
+                    padding: 56px 40px;
+                    .heading-medium {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            &.pricing-tile-featured {
+            }
+        }
+    }
+}
+
+.pricing-table {
+    background-color: blueviolet;
+}

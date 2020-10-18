@@ -1,257 +1,256 @@
 .hero {
-  .grid-container {
-    .copy-outer {
-      height: 100%;
-      width: 100%;
-      .copy-inner {
-        padding: 175px 0;
-        max-width: 400px;
-        margin: 0 auto;
-        .heading-large {
-          padding-bottom: 20px;
-        }
-        .copy {
-          padding-bottom: 45px;
-        }
-        .btn-arrow {
-          .heading-xsmall {
-            padding-right: 30px;
-          }
-        }
-      }
-    }
-    .img-outer {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    &.row-one {
-      grid-template-columns: 1.5fr 2fr;
-      .copy-outer {
-        background-color: $black;
-        .copy-inner {
-          .heading-large,
-          .copy {
-            color: $white;
-          }
-          .copy {
-            opacity: 0.6;
-          }
-          .btn-arrow {
-            .heading-xsmall {
-              color: $white;
-            }
-          }
-        }
-      }
-      .img-outer {
-        background-image: url("../assets/images/home/desktop/create-and-share.jpg");
-      }
-    }
-    &.row-two {
-      grid-template-columns: 2fr 1.5fr;
-      .img-outer {
-        background-image: url("../assets/images/home/desktop/beautiful-stories.jpg");
-      }
-    }
-    &.row-three {
-      grid-template-columns: 1.5fr 2fr;
-      .img-outer {
-        background-image: url("../assets/images/home/desktop/designed-for-everyone.jpg");
-      }
-    }
-  }
-
-  .row-five {
-    .inner {
-      max-width: 1140px;
-      padding: 120px 0;
-      @include centreContent;
-      .tile {
-        max-width: 350px;
-        min-height: 240px;
-        padding-right: 30px;
-        &:nth-of-type(3) {
-          padding-right: 0;
-        }
-        .copy-outer {
-          text-align: center;
-          @include centreContent;
-          flex-direction: column;
-
-          .heading-small {
-            padding-top: 50px;
-            padding-bottom: 20px;
-            text-transform: capitalize;
-          }
-          .heading-second {
-            padding-top: 80px;
-          }
-        }
-      }
-    }
-  }
 }
 
 .grid-container {
-  display: grid;
-  column-gap: 0; // this is default browser setting
+    display: grid;
+    column-gap: 0; // this is default browser setting
+    .copy-outer {
+        height: 100%;
+        width: 100%;
+        .copy-inner {
+            padding: 175px 0;
+            max-width: 400px;
+            margin: 0 auto;
+            .heading-large {
+                padding-bottom: 20px;
+            }
+            .copy {
+                padding-bottom: 45px;
+            }
+            .btn-arrow {
+                .heading-xsmall {
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+    .img-outer {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &.row-one {
+        grid-template-columns: 1.5fr 2fr;
+        .copy-outer {
+            background-color: $black;
+            .copy-inner {
+                .heading-large,
+                .copy {
+                    color: $white;
+                }
+                .copy {
+                    opacity: 0.6;
+                }
+                .btn-arrow {
+                    .heading-xsmall {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .img-outer {
+            background-image: url("../assets/images/home/desktop/create-and-share.jpg");
+        }
+    }
+    &.row-two {
+        grid-template-columns: 2fr 1.5fr;
+        .img-outer {
+            background-image: url("../assets/images/home/desktop/beautiful-stories.jpg");
+        }
+    }
+    &.row-three {
+        grid-template-columns: 1.5fr 2fr;
+        .img-outer {
+            background-image: url("../assets/images/home/desktop/designed-for-everyone.jpg");
+        }
+    }
 }
 
 .stories-wrapper {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  .tile {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    &:hover {
-      transform: translate(0, -35px);
-      transition: all 0.25s ease-in-out;
-      border-bottom: 5px solid transparent;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 0;
-        height: 10px;
-        @include colorGradient;
-      }
-    }
-    .copy-outer {
-      position: relative;
-      height: 100%;
-      width: 100%;
-      .copy-inner {
-        padding: 460px 0 40px;
-        max-width: 400px;
-        margin: 0 auto;
-        .heading-small,
-        .heading-xsmall,
-        .btn-arrow span {
-          text-transform: capitalize;
-          color: $white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .tile {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        &:hover {
+            transform: translate(0, -35px);
+            transition: all 0.25s ease-in-out;
+            border-bottom: 5px solid transparent;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                height: 10px;
+                @include colorGradient;
+            }
         }
-        .heading-small {
-          padding-bottom: 10px;
-        }
-        .heading-xsmall {
-          font-weight: 400;
-          padding-bottom: 20px;
-        }
-        .author {
-          &::after {
-            content: "";
-            display: block;
+        .copy-outer {
+            position: relative;
+            height: 100%;
             width: 100%;
-            height: 1px;
-            background-color: $white;
-            opacity: 0.25;
-            margin-top: 20px;
-          }
+            .copy-inner {
+                padding: 460px 20px 40px;
+                max-width: 400px;
+                margin: 0 auto;
+                .heading-small,
+                .heading-xsmall,
+                .btn-arrow span {
+                    text-transform: capitalize;
+                    color: $white;
+                }
+                .heading-small {
+                    padding-bottom: 10px;
+                }
+                .heading-xsmall {
+                    font-weight: 400;
+                    padding-bottom: 20px;
+                }
+                .author {
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $white;
+                        opacity: 0.25;
+                        margin-top: 20px;
+                    }
+                }
+                .btn-arrow {
+                    justify-content: space-between;
+                }
+            }
         }
-        .btn-arrow {
-          justify-content: space-between;
+        &.tile-one {
+            background-image: url("../assets/images/stories/desktop/mountains.jpg");
         }
-      }
+        &.tile-two {
+            background-image: url("../assets/images/stories/desktop/cityscapes.jpg");
+        }
+        &.tile-three {
+            background-image: url("../assets/images/stories/desktop/18-days-voyage.jpg");
+        }
+        &.tile-four {
+            background-image: url("../assets/images/stories/desktop/architecturals.jpg");
+        }
     }
-    &.tile-one {
-      background-image: url("../assets/images/stories/desktop/mountains.jpg");
-    }
-    &.tile-two {
-      background-image: url("../assets/images/stories/desktop/cityscapes.jpg");
-    }
-    &.tile-three {
-      background-image: url("../assets/images/stories/desktop/18-days-voyage.jpg");
-    }
-    &.tile-four {
-      background-image: url("../assets/images/stories/desktop/architecturals.jpg");
-    }
-  }
 }
 
 .stories-hero {
-  background: url("../assets/images/stories/desktop/moon-of-appalacia.jpg")
-    no-repeat center center;
-  background-size: cover;
-  .inner {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    .copy-outer {
-      padding: 240px 0 240px 160px;
-      color: $white;
-      max-width: 500px;
-      .heading-top {
-        padding-bottom: 32px;
-      }
-      .date-author {
-        padding-bottom: 20px;
-      }
-      .heading-large {
-        padding-bottom: 20px;
-      }
-      .date {
-        padding-right: 12px;
-      }
-      .body-copy {
-        padding-bottom: 24px;
-      }
-      .btn-arrow {
-        .heading-xsmall {
-          padding-right: 20px;
+    background: url("../assets/images/stories/desktop/moon-of-appalacia.jpg")
+        no-repeat center center;
+    background-size: cover;
+    .inner {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        .copy-outer {
+            padding: 240px 0 240px 160px;
+            color: $white;
+            max-width: 500px;
+            .heading-top {
+                padding-bottom: 32px;
+            }
+            .date-author {
+                padding-bottom: 20px;
+            }
+            .heading-large {
+                padding-bottom: 20px;
+            }
+            .date {
+                padding-right: 12px;
+            }
+            .body-copy {
+                padding-bottom: 24px;
+            }
+            .btn-arrow {
+                .heading-xsmall {
+                    padding-right: 20px;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .stories-page {
-  .tile {
-    &.tile-five {
-      background-image: url("../assets/images/stories/desktop/world-tour.jpg");
-    }
-    &.tile-six {
-      background-image: url("../assets/images/stories/desktop/unforeseen-corners.jpg");
-    }
-    &.tile-seven {
-      background-image: url("../assets/images/stories/desktop/king-on-africa.jpg");
-    }
-    &.tile-eight {
-      background-image: url("../assets/images/stories/desktop/trip-to-nowhere.jpg");
-    }
-    &.tile-nine {
-      background-image: url("../assets/images/stories/desktop/rage-of-the-sea.jpg");
-    }
-    &.tile-ten {
-      background-image: url("../assets/images/stories/desktop/running-free.jpg");
-    }
-    &.tile-eleven {
-      background-image: url("../assets/images/stories/desktop/behind-the-waves.jpg");
-    }
-    &.tile-twelve {
-      background-image: url("../assets/images/stories/desktop/calm-waters.jpg");
-    }
-    &.tile-thirteen {
-      background-image: url("../assets/images/stories/desktop/milky-way.jpg");
-    }
-    &.tile-fourteen {
-      background-image: url("../assets/images/stories/desktop/dark-forest.jpg");
-    }
-    &.tile-fifteen {
-      background-image: url("../assets/images/stories/desktop/somwarpet.jpg");
-    }
-    &.tile-sixteen {
-      background-image: url("../assets/images/stories/desktop/land-of-dreams.jpg");
-    }
-    .copy-outer {
-      .copy-inner {
-        .heading-xsmall {
-          padding-bottom: 10px;
+    .tile {
+        &.tile-five {
+            background-image: url("../assets/images/stories/desktop/world-tour.jpg");
         }
-      }
+        &.tile-six {
+            background-image: url("../assets/images/stories/desktop/unforeseen-corners.jpg");
+        }
+        &.tile-seven {
+            background-image: url("../assets/images/stories/desktop/king-on-africa.jpg");
+        }
+        &.tile-eight {
+            background-image: url("../assets/images/stories/desktop/trip-to-nowhere.jpg");
+        }
+        &.tile-nine {
+            background-image: url("../assets/images/stories/desktop/rage-of-the-sea.jpg");
+        }
+        &.tile-ten {
+            background-image: url("../assets/images/stories/desktop/running-free.jpg");
+        }
+        &.tile-eleven {
+            background-image: url("../assets/images/stories/desktop/behind-the-waves.jpg");
+        }
+        &.tile-twelve {
+            background-image: url("../assets/images/stories/desktop/calm-waters.jpg");
+        }
+        &.tile-thirteen {
+            background-image: url("../assets/images/stories/desktop/milky-way.jpg");
+        }
+        &.tile-fourteen {
+            background-image: url("../assets/images/stories/desktop/dark-forest.jpg");
+        }
+        &.tile-fifteen {
+            background-image: url("../assets/images/stories/desktop/somwarpet.jpg");
+        }
+        &.tile-sixteen {
+            background-image: url("../assets/images/stories/desktop/land-of-dreams.jpg");
+        }
+        .copy-outer {
+            .copy-inner {
+                .heading-xsmall {
+                    padding-bottom: 10px;
+                }
+            }
+        }
     }
-  }
+}
+
+.tiles-wrapper {
+    .inner {
+        max-width: 1140px;
+        padding: 120px 0;
+        @include centreContent;
+        flex-flow: wrap;
+        .tile {
+            max-width: 350px;
+            min-height: 240px;
+            padding-right: 30px;
+            &:nth-of-type(3) {
+                padding-right: 0;
+            }
+            .copy-outer {
+                text-align: center;
+                @include centreContent;
+                flex-direction: column;
+
+                .heading-small {
+                    padding-top: 50px;
+                    padding-bottom: 20px;
+                    text-transform: capitalize;
+                }
+                .heading-second {
+                    padding-top: 80px;
+                }
+            }
+        }
+    }
 }
