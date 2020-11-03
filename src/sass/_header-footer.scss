@@ -21,9 +21,10 @@
 .footer {
   background-color: $black;
   .inner {
-    max-width: 1120px;
+    max-width: 1140px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 64px 0;
     margin: 0 auto;
     .left {

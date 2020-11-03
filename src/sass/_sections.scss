@@ -1,82 +1,152 @@
 #features {
-    .row-one {
-        .img-outer {
-            background-image: url("../assets/images/features/desktop/hero-features.jpg");
-        }
+  .row-one {
+    .img-outer {
+      background-image: url("../assets/images/features/desktop/hero-features.jpg");
     }
+  }
 }
 
 #features-tiles {
-    .tiles-wrapper {
-        .inner {
-            padding: 160px 0;
-            .tile {
-                padding-bottom: 100px;
-                .copy-outer {
-                    .heading-second {
-                        padding-top: 90px;
-                    }
-                    .heading-third {
-                        padding-top: 30px;
-                    }
-                }
-            }
+  .tiles-wrapper {
+    .inner {
+      padding: 160px 0;
+      .tile {
+        padding-bottom: 100px;
+        .copy-outer {
+          .heading-second {
+            padding-top: 90px;
+          }
+          .heading-third {
+            padding-top: 30px;
+          }
         }
+      }
     }
+  }
 }
 
 .invite-block {
-    background: url("../assets/images/shared/desktop/bg-beta.jpg") no-repeat
-        center center;
-    background-size: cover;
-    .inner {
-        max-width: 1440px;
-        margin: 0 auto;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding: 70px 0;
-        .heading-block {
-            max-width: 400px;
-        }
+  background: url("../assets/images/shared/desktop/bg-beta.jpg") no-repeat
+    center center;
+  background-size: cover;
+  .inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+    .heading-block {
+      max-width: 400px;
     }
+  }
 }
 
 #pricing {
-    .grid-container {
-        .img-outer {
-            background-image: url("../assets/images/pricing/desktop/hero.jpg");
-        }
+  .grid-container {
+    .img-outer {
+      background-image: url("../assets/images/pricing/desktop/hero.jpg");
+      background-position: center top;
     }
+  }
 }
 
 .pricing-tiles {
-    background-color: aquamarine;
-    .inner {
-        max-width: 1110px;
-        margin: 0 auto;
-        display: flex;
-        .draggable-wrapper {
+  background-color: aquamarine;
+  .inner {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    .draggable-wrapper {
+      padding-bottom: 81px;
+      .inner {
+        max-width: 256px;
+        padding: 0;
+        @include centreContent;
+        flex-direction: row;
+        p {
+          font-size: 1.8rem;
+          font-weight: 700;
+          opacity: 0.5;
+          &.active {
+            opacity: 1;
+          }
         }
-        .tiles-wrapper {
-            .pricing-tile {
-                background-color: $grey;
-                .inner {
-                    @include centreContent;
-                    flex-direction: column;
-                    padding: 56px 40px;
-                    .heading-medium {
-                        text-transform: capitalize;
-                    }
-                }
-            }
-            &.pricing-tile-featured {
-            }
+        .slider-wrapper {
+          width: 64px;
+          height: 32px;
+          background-color: $light-grey;
+          border-radius: 16px;
+          margin: 0 32px;
+          .inner-circle {
+            width: 24px;
+            height: 24px;
+            background-color: $black;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            top: 5px;
+            left: 5px;
+          }
         }
+      }
     }
+    .tiles-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .pricing-tile {
+        position: relative;
+        .inner {
+          @include centreContent;
+          flex-direction: column;
+          padding: 56px 40px;
+          text-align: center;
+          .heading-medium {
+            text-transform: capitalize;
+            padding-bottom: 11px;
+          }
+          .description {
+            padding-bottom: 40px;
+          }
+          .duration {
+            padding-bottom: 40px;
+          }
+        }
+        &-small {
+          max-width: 350px;
+          max-height: 407px;
+          background-color: $grey;
+        }
+        &-featured {
+          max-width: 350px;
+          max-height: 470px;
+          background-color: $black;
+          transform: translate(0, -33px);
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include colorGradient;
+            width: 100%;
+            height: 6px;
+          }
+          .inner {
+            padding: 90px 40px;
+            color: $white;
+            p {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .pricing-table {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
