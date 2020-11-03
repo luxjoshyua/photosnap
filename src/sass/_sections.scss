@@ -81,6 +81,10 @@
           background-color: $light-grey;
           border-radius: 16px;
           margin: 0 32px;
+          &.active-bg {
+            background-color: $black;
+            transition: all 0.5s ease-in-out;
+          }
           .inner-circle {
             width: 24px;
             height: 24px;
@@ -90,6 +94,11 @@
             position: relative;
             top: 5px;
             left: 5px;
+            &.active-circle {
+              transform: translateX(26px);
+              background-color: $white;
+              transition: all 0.5s ease-in-out;
+            }
           }
         }
       }
