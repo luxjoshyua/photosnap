@@ -53,13 +53,32 @@
 }
 
 .pricing-tiles {
-  background-color: aquamarine;
+  &-monthly {
+    &.inactive-monthly {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+  &-yearly {
+    transform: translate(0, -470px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    &.inactive-yearly {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    &.active-yearly {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
   .inner {
     max-width: 1110px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding: 120px 0;
+    position: relative;
     .draggable-wrapper {
       padding-bottom: 81px;
       .inner {
@@ -97,6 +116,10 @@
             &.active-circle {
               transform: translateX(26px);
               background-color: $white;
+              transition: all 0.5s ease-in-out;
+            }
+            &.inactive-circle {
+              transform: translateX(0);
               transition: all 0.5s ease-in-out;
             }
           }
