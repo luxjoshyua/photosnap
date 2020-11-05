@@ -67,6 +67,8 @@
       color: $white;
       .btn-arrow {
         padding-bottom: 100px;
+        display: flex;
+        justify-content: flex-end;
         .heading-xsmall {
           padding-right: 20px;
         }
