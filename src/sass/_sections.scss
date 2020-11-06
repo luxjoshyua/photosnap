@@ -1,7 +1,21 @@
 #features {
   .row-one {
+    .copy-outer {
+      &::before {
+        content: "";
+        display: block;
+        background: linear-gradient(to bottom, #5a77ff, #bc7198, #ffc593);
+        width: 6px;
+        height: 144px;
+        position: absolute;
+        top: 32%;
+      }
+    }
     .img-outer {
       background-image: url("../assets/images/features/desktop/hero-features.jpg");
+      @include md {
+        background-image: url("../assets/images/features/tablet/hero-features-tablet.jpg");
+      }
     }
   }
 }
@@ -10,8 +24,16 @@
   .tiles-wrapper {
     .inner {
       padding: 160px 0;
+      @include md {
+        flex-direction: row;
+        padding: 100px 0;
+      }
       .tile {
         padding-bottom: 100px;
+        @include md {
+          padding-right: 20px;
+          padding-bottom: 60px;
+        }
         .copy-outer {
           .heading-second {
             padding-top: 90px;
@@ -29,6 +51,19 @@
   background: url("../assets/images/shared/desktop/bg-beta.jpg") no-repeat
     center center;
   background-size: cover;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom, #5a77ff, #bc7198, #ffc593);
+    width: 6px;
+    height: 144px;
+    position: absolute;
+    top: 32%;
+    @include md {
+      top: 27%;
+    }
+  }
   .inner {
     max-width: 1140px;
     margin: 0 auto;
@@ -37,6 +72,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 70px 0;
+    @include md {
+      padding: 70px 40px;
+    }
     .heading-block {
       max-width: 400px;
     }
@@ -45,6 +83,17 @@
 
 #pricing {
   .grid-container {
+    .copy-outer {
+      &::before {
+        content: "";
+        display: block;
+        background: linear-gradient(to bottom, #5a77ff, #bc7198, #ffc593);
+        width: 6px;
+        height: 144px;
+        position: absolute;
+        top: 32%;
+      }
+    }
     .img-outer {
       background-image: url("../assets/images/pricing/desktop/hero.jpg");
       background-position: center top;
@@ -54,23 +103,28 @@
 
 .pricing-tiles {
   max-height: 720px;
+  @include md {
+    max-height: 1540px;
+  }
   &-monthly {
     &.inactive-monthly {
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
+      height: 0;
     }
   }
   &-yearly {
-    transform: translate(0, -470px);
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     &.inactive-yearly {
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
+      height: 0;
     }
     &.active-yearly {
       opacity: 1;
       transition: opacity 0.5s ease-in-out;
+      height: 100%;
     }
   }
   .inner {
@@ -130,9 +184,16 @@
     .tiles-wrapper {
       display: flex;
       justify-content: space-between;
+      @include md {
+        flex-direction: column;
+        padding: 0 40px;
+      }
       .pricing-tile {
         position: relative;
         box-shadow: 5px 5px 14px 4px rgba(0, 0, 0, 0.42);
+        @include md {
+          margin-bottom: 40px;
+        }
         &:hover {
           box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
             -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
@@ -159,12 +220,19 @@
           max-width: 350px;
           max-height: 407px;
           background-color: $grey;
+          @include md {
+            max-width: 100%;
+          }
         }
         &-featured {
           max-width: 350px;
           max-height: 470px;
           background-color: $black;
           transform: translate(0, -33px);
+          @include md {
+            max-width: 100%;
+            transform: translate(0, 0);
+          }
           &::before {
             content: "";
             position: absolute;
@@ -189,6 +257,9 @@
 
 .pricing-table {
   padding: 100px 0;
+  @include md {
+    padding: 100px 40px;
+  }
   .heading-wrapper {
     @include centreContent;
     padding-bottom: 44px;
@@ -225,6 +296,9 @@
       }
       &.x-move {
         transform: translateX(-20px);
+      }
+      &.x-move-tablet {
+        transform: translateX(-60px);
       }
     }
   }

@@ -159,8 +159,6 @@
     }
     &.tile-one {
       background-image: url("../assets/images/stories/desktop/mountains.jpg");
-      @include md {
-      }
     }
     &.tile-two {
       background-image: url("../assets/images/stories/desktop/cityscapes.jpg");
@@ -178,6 +176,10 @@
   background: url("../assets/images/stories/desktop/moon-of-appalacia.jpg")
     no-repeat center center;
   background-size: cover;
+  @include md {
+    background: url("../assets/images/stories/tablet/moon-of-appalacia.jpg")
+      no-repeat center center;
+  }
   .inner {
     width: 100%;
     display: flex;
@@ -186,6 +188,9 @@
       padding: 240px 0 240px 160px;
       color: $white;
       max-width: 500px;
+      @include md {
+        padding: 122px 0 122px 40px;
+      }
       .heading-top {
         padding-bottom: 32px;
       }
