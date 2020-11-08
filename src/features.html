@@ -1,323 +1,268 @@
 <!DOCTYPE html>
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-    <!--<![endif]-->
+<!--<![endif]-->
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Photosnap</title>
-        <meta
-            name="description"
-            content="Photosnap Frontend Mentors Challenge"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="./assets/images/favicon-32x32.png"
-        />
-    </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Photosnap</title>
+  <meta name="description" content="Photosnap Frontend Mentors Challenge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" />
+</head>
 
-    <body>
-        <!-- header -->
-        <header class="header">
-            <div
-                class="inner d-flex justify-content-between align-items-center"
-            >
-                <div class="item">
-                    <a href="index.html">
-                        <img
-                            src="./assets/images/shared/desktop/logo.svg"
-                            alt="Photosnap logo"
-                        />
-                    </a>
-                </div>
-                <div class="item">
-                    <ul class="d-flex">
-                        <li>
-                            <a href="stories.html" class="heading-xsmall"
-                                >stories</a
-                            >
-                        </li>
-                        <li>
-                            <a href="features.html" class="heading-xsmall"
-                                >features</a
-                            >
-                        </li>
-                        <li>
-                            <a href="pricing.html" class="heading-xsmall"
-                                >pricing</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <div class="item">
-                    <a href="#" class="btn btn-black">
-                        <span class="heading-xsmall heading-white"
-                            >get an invite</span
-                        >
-                    </a>
-                </div>
+<body>
+  <!-- header -->
+  <header class="header hide-mobile">
+    <div class="inner d-flex justify-content-between align-items-center">
+      <div class="item">
+        <a href="index.html">
+          <img src="./assets/images/shared/desktop/logo.svg" alt="Photosnap logo" />
+        </a>
+      </div>
+      <div class="item">
+        <ul class="d-flex">
+          <li>
+            <a href="stories.html" class="heading-xsmall">stories</a>
+          </li>
+          <li>
+            <a href="features.html" class="heading-xsmall">features</a>
+          </li>
+          <li>
+            <a href="pricing.html" class="heading-xsmall">pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="item">
+        <a href="#" class="btn btn-black">
+          <span class="heading-xsmall heading-white">get an invite</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- header mobile -->
+  <header class="header-mb hide-medium-large">
+    <div class="inner">
+      <div class="header-item">
+        <a href="index.html">
+          <img src="./assets/images/shared/desktop/logo.svg" alt="Photosnap logo">
+        </a>
+      </div>
+      <div class="header-item hamburger hide-medium-large">
+        <div class="hamburger-nav">
+          <div class="nav-box">
+            <div class="nav-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-links-mb hide-medium-large">
+    <div class="nav-inner-mb">
+      <ul>
+        <a href="stories.html">
+          <li>stories</li>
+        </a>
+        <a href="features.html">
+          <li>features</li>
+        </a>
+        <a href="pricing.html">
+          <li>pricing</li>
+        </a>
+      </ul>
+      <div class="btn-outer">
+        <div class="btn-black">
+          <span class="heading-xsmall heading-white">GET AN INVITE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <article>
+      <section class="features" id="features">
+        <div class="grid-container row-one">
+          <div class="copy-outer">
+            <div class="copy-inner">
+              <h1 class="heading-large">FEATURES</h1>
+              <p class="copy">
+                We make sure all of our features are
+                designed to be loved by every aspiring and
+                even professional photograpers who wanted to
+                share their stories.
+              </p>
             </div>
-        </header>
+          </div>
+          <div class="img-outer"></div>
+        </div>
+      </section>
+      <section class="tiles" id="features-tiles">
+        <div class="tiles-wrapper">
+          <div class="inner">
+            <!-- tile one -->
+            <div class="tile">
+              <div class="copy-outer">
+                <img src="./assets/images/features/desktop/responsive.svg" alt="Responsive" />
+                <p class="heading-small">100% Responsive</p>
+                <p>
+                  No matter which the device you’re on,
+                  our site is fully responsive and stories
+                  look beautiful on any screen.
+                </p>
+              </div>
+            </div>
+            <!-- tile two -->
+            <div class="tile">
+              <div class="copy-outer">
+                <img src="./assets/images/features/desktop/no-limit.svg" alt="Responsive" />
+                <p class="heading-small heading-second">
+                  No photo upload limit
+                </p>
+                <p>
+                  Our tool has no limits on uploads or
+                  bandwidth. Freely upload in bulk and
+                  share all of your stories in one go.
+                </p>
+              </div>
+            </div>
+            <!-- tile three -->
+            <div class="tile">
+              <div class="copy-outer">
+                <img src="./assets/images/features/desktop/embed.svg" alt="Responsive" />
+                <p class="heading-small heading-third">
+                  Available to Embed
+                </p>
+                <p>
+                  Embed Tweets, Facebook posts, Instagram
+                  media, Vimeo or YouTube videos, Google
+                  Maps, and more.
+                </p>
+              </div>
+            </div>
+            <!-- tile four -->
+            <div class="tile">
+              <div class="copy-outer">
+                <img src="./assets/images/features/desktop/custom-domain.svg" alt="Responsive" />
+                <p class="heading-small">Custom Domain</p>
+                <p>
+                  With Photosnap subscriptions you can
+                  host your stories on your own domain.
+                  You can also remove our branding!
+                </p>
+              </div>
+            </div>
+            <!-- tile five -->
+            <div class="tile">
+              <div class="copy-outer">
+                <img src="./assets/images/features/desktop/boost-exposure.svg" alt="Responsive" />
+                <p class="heading-small">
+                  Boost Your Exposure
+                </p>
+                <p>
+                  Users that viewed your story or gallery
+                  can easily get notifed of new and
+                  featured stories with our built in
+                  mailing list.
+                </p>
+              </div>
+            </div>
+            <!-- tile six -->
+            <div class="tile">
+              <div class="copy-outer">
+                <img src="./assets/images/features/desktop/drag-drop.svg" alt="Responsive" />
+                <p class="heading-small">
+                  Drag & Drop Image
+                </p>
+                <p>
+                  Easily drag and drop your image and get
+                  beautiful shots everytime. No over the
+                  top tooling to add friction to creating
+                  stories.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="invite-block">
+        <div class="inner">
+          <div class="heading-block">
+            <h1 class="heading-large heading-white">
+              We're in beta. Get your invite today!
+            </h1>
+          </div>
+          <div class="btn-arrow">
+            <span class="heading-xsmall heading-white">GET AN INVITE</span>
+            <div class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                  <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="inner">
+          <div class="left">
+            <div class="socials">
+              <img src="./assets/images/shared/desktop/logo-white.svg" alt="Logo" class="logo" />
+              <div class="social-links">
+                <a href="facebook.com" class="social-link"><img src="./assets/images/shared/desktop/facebook.svg"
+                    alt="facebook icon" />
+                </a>
+                <a href="youtube.com" class="social-link"><img src="./assets/images/shared/desktop/youtube.svg"
+                    alt="youtube icon" /></a>
+                <a href="twitter.com" class="social-link"><img src="./assets/images/shared/desktop/twitter.svg"
+                    alt="twitter icon" /></a>
+                <a href="pinterest.com" class="social-link"><img src="./assets/images/shared/desktop/pinterest.svg"
+                    alt="pinterest icon" /></a>
+                <a href="instagram.com" class="social-link"><img src="./assets/images/shared/desktop/instagram.svg"
+                    alt="instagram icon" /></a>
+              </div>
+            </div>
+            <div class="menu-links">
+              <ul>
+                <li>
+                  <a href="index.html" class="heading-xsmall">home</a>
+                </li>
+                <li>
+                  <a href="stories.html" class="heading-xsmall">stories</a>
+                </li>
+                <li>
+                  <a href="features.html" class="heading-xsmall">features</a>
+                </li>
+                <li>
+                  <a href="pricing.html" class="heading-xsmall">pricing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="btn-arrow">
+              <span class="heading-xsmall">GET AN INVITE</span>
+              <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                  <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                    <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>Copyright 2019. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+</body>
 
-        <main>
-            <article>
-                <section class="features" id="features">
-                    <div class="grid-container row-one">
-                        <div class="copy-outer">
-                            <div class="copy-inner">
-                                <h1 class="heading-large">FEATURES</h1>
-                                <p class="copy">
-                                    We make sure all of our features are
-                                    designed to be loved by every aspiring and
-                                    even professional photograpers who wanted to
-                                    share their stories.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="img-outer"></div>
-                    </div>
-                </section>
-                <section class="tiles" id="features-tiles">
-                    <div class="tiles-wrapper">
-                        <div class="inner">
-                            <!-- tile one -->
-                            <div class="tile">
-                                <div class="copy-outer">
-                                    <img
-                                        src="./assets/images/features/desktop/responsive.svg"
-                                        alt="Responsive"
-                                    />
-                                    <p class="heading-small">100% Responsive</p>
-                                    <p>
-                                        No matter which the device you’re on,
-                                        our site is fully responsive and stories
-                                        look beautiful on any screen.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- tile two -->
-                            <div class="tile">
-                                <div class="copy-outer">
-                                    <img
-                                        src="./assets/images/features/desktop/no-limit.svg"
-                                        alt="Responsive"
-                                    />
-                                    <p class="heading-small heading-second">
-                                        No photo upload limit
-                                    </p>
-                                    <p>
-                                        Our tool has no limits on uploads or
-                                        bandwidth. Freely upload in bulk and
-                                        share all of your stories in one go.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- tile three -->
-                            <div class="tile">
-                                <div class="copy-outer">
-                                    <img
-                                        src="./assets/images/features/desktop/embed.svg"
-                                        alt="Responsive"
-                                    />
-                                    <p class="heading-small heading-third">
-                                        Available to Embed
-                                    </p>
-                                    <p>
-                                        Embed Tweets, Facebook posts, Instagram
-                                        media, Vimeo or YouTube videos, Google
-                                        Maps, and more.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- tile four -->
-                            <div class="tile">
-                                <div class="copy-outer">
-                                    <img
-                                        src="./assets/images/features/desktop/custom-domain.svg"
-                                        alt="Responsive"
-                                    />
-                                    <p class="heading-small">Custom Domain</p>
-                                    <p>
-                                        With Photosnap subscriptions you can
-                                        host your stories on your own domain.
-                                        You can also remove our branding!
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- tile five -->
-                            <div class="tile">
-                                <div class="copy-outer">
-                                    <img
-                                        src="./assets/images/features/desktop/boost-exposure.svg"
-                                        alt="Responsive"
-                                    />
-                                    <p class="heading-small">
-                                        Boost Your Exposure
-                                    </p>
-                                    <p>
-                                        Users that viewed your story or gallery
-                                        can easily get notifed of new and
-                                        featured stories with our built in
-                                        mailing list.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- tile six -->
-                            <div class="tile">
-                                <div class="copy-outer">
-                                    <img
-                                        src="./assets/images/features/desktop/drag-drop.svg"
-                                        alt="Responsive"
-                                    />
-                                    <p class="heading-small">
-                                        Drag & Drop Image
-                                    </p>
-                                    <p>
-                                        Easily drag and drop your image and get
-                                        beautiful shots everytime. No over the
-                                        top tooling to add friction to creating
-                                        stories.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="invite-block">
-                    <div class="inner">
-                        <div class="heading-block">
-                            <h1 class="heading-large heading-white">
-                                We're in beta. Get your invite today!
-                            </h1>
-                        </div>
-                        <div class="btn-arrow">
-                            <span class="heading-xsmall heading-white"
-                                >GET AN INVITE</span
-                            >
-                            <div class="arrow">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="43"
-                                    height="14"
-                                >
-                                    <g
-                                        fill="none"
-                                        fill-rule="evenodd"
-                                        stroke="#FFF"
-                                    >
-                                        <path
-                                            d="M0 7h41.864M35.428 1l6 6-6 6"
-                                        />
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <footer class="footer">
-                    <div class="inner">
-                        <div class="left">
-                            <div class="socials">
-                                <img
-                                    src="./assets/images/shared/desktop/logo-white.svg"
-                                    alt="Logo"
-                                    class="logo"
-                                />
-                                <div class="social-links">
-                                    <a href="facebook.com" class="social-link"
-                                        ><img
-                                            src="./assets/images/shared/desktop/facebook.svg"
-                                            alt="facebook icon"
-                                        />
-                                    </a>
-                                    <a href="youtube.com" class="social-link"
-                                        ><img
-                                            src="./assets/images/shared/desktop/youtube.svg"
-                                            alt="youtube icon"
-                                    /></a>
-                                    <a href="twitter.com" class="social-link"
-                                        ><img
-                                            src="./assets/images/shared/desktop/twitter.svg"
-                                            alt="twitter icon"
-                                    /></a>
-                                    <a href="pinterest.com" class="social-link"
-                                        ><img
-                                            src="./assets/images/shared/desktop/pinterest.svg"
-                                            alt="pinterest icon"
-                                    /></a>
-                                    <a href="instagram.com" class="social-link"
-                                        ><img
-                                            src="./assets/images/shared/desktop/instagram.svg"
-                                            alt="instagram icon"
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="menu-links">
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="index.html"
-                                            class="heading-xsmall"
-                                            >home</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="stories.html"
-                                            class="heading-xsmall"
-                                            >stories</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="features.html"
-                                            class="heading-xsmall"
-                                            >features</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="pricing.html"
-                                            class="heading-xsmall"
-                                            >pricing</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="btn-arrow">
-                                <span class="heading-xsmall"
-                                    >GET AN INVITE</span
-                                >
-                                <div class="arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="43"
-                                        height="14"
-                                    >
-                                        <g
-                                            fill="none"
-                                            fill-rule="evenodd"
-                                            stroke="#FFF"
-                                        >
-                                            <path
-                                                d="M0 7h41.864M35.428 1l6 6-6 6"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="copyright">
-                                <p>Copyright 2019. All Rights Reserved</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </article>
-        </main>
-    </body>
 </html>

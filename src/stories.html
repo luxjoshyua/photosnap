@@ -1,821 +1,590 @@
 <!DOCTYPE html>
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-    <!--<![endif]-->
+<!--<![endif]-->
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Photosnap</title>
-        <meta
-            name="description"
-            content="Photosnap Frontend Mentors Challenge"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="icon"
-            type="image/png"
-            href="./assets/images/favicon-32x32.png"
-        />
-    </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Photosnap</title>
+  <meta name="description" content="Photosnap Frontend Mentors Challenge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" />
+</head>
 
-    <body>
-        <!-- header -->
-        <header class="header">
-            <div
-                class="inner d-flex justify-content-between align-items-center"
-            >
-                <div class="item">
-                    <a href="index.html">
-                        <img
-                            src="./assets/images/shared/desktop/logo.svg"
-                            alt="Photosnap logo"
-                        />
-                    </a>
-                </div>
-                <div class="item">
-                    <ul class="d-flex">
-                        <li>
-                            <a href="stories.html" class="heading-xsmall"
-                                >stories</a
-                            >
-                        </li>
-                        <li>
-                            <a href="features.html" class="heading-xsmall"
-                                >features</a
-                            >
-                        </li>
-                        <li>
-                            <a href="pricing.html" class="heading-xsmall"
-                                >pricing</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <div class="item">
-                    <a href="#" class="btn btn-black">
-                        <span class="heading-xsmall heading-white"
-                            >get an invite</span
-                        >
-                    </a>
-                </div>
+<body>
+  <!-- header -->
+  <header class="header hide-mobile">
+    <div class="inner d-flex justify-content-between align-items-center">
+      <div class="item">
+        <a href="index.html">
+          <img src="./assets/images/shared/desktop/logo.svg" alt="Photosnap logo" />
+        </a>
+      </div>
+      <div class="item">
+        <ul class="d-flex">
+          <li>
+            <a href="stories.html" class="heading-xsmall">stories</a>
+          </li>
+          <li>
+            <a href="features.html" class="heading-xsmall">features</a>
+          </li>
+          <li>
+            <a href="pricing.html" class="heading-xsmall">pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="item">
+        <a href="#" class="btn btn-black">
+          <span class="heading-xsmall heading-white">get an invite</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- header mobile -->
+  <header class="header-mb hide-medium-large">
+    <div class="inner">
+      <div class="header-item">
+        <a href="index.html">
+          <img src="./assets/images/shared/desktop/logo.svg" alt="Photosnap logo">
+        </a>
+      </div>
+      <div class="header-item hamburger hide-medium-large">
+        <div class="hamburger-nav">
+          <div class="nav-box">
+            <div class="nav-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-links-mb hide-medium-large">
+    <div class="nav-inner-mb">
+      <ul>
+        <a href="stories.html">
+          <li>stories</li>
+        </a>
+        <a href="features.html">
+          <li>features</li>
+        </a>
+        <a href="pricing.html">
+          <li>pricing</li>
+        </a>
+      </ul>
+      <div class="btn-outer">
+        <div class="btn-black">
+          <span class="heading-xsmall heading-white">GET AN INVITE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <article>
+      <section class="stories-hero">
+        <div class="inner">
+          <div class="copy-outer">
+            <p class="heading-xsmall heading-top">
+              LAST MONTH’S FEATURED STORY
+            </p>
+            <h1 class="heading-large">
+              HAZY FULL MOON OF APPALACHIA
+            </h1>
+            <p class="heading-xsmall date-author">
+              <span class="copy-light date">March 2nd 2020</span>
+              by John Appleseed
+            </p>
+            <p class="copy-light body-copy">
+              The dissected plateau area, while not actually
+              made up of geological mountains, is popularly
+              called "mountains," especially in eastern
+              Kentucky and West Virginia, and while the ridges
+              are not high, the terrain is extremely rugged.
+            </p>
+            <div class="btn-arrow">
+              <span class="heading-xsmall">READ THE STORY</span>
+              <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                  <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                    <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                  </g>
+                </svg>
+              </div>
             </div>
-        </header>
-        <main>
-            <article>
-                <section class="stories-hero">
-                    <div class="inner">
-                        <div class="copy-outer">
-                            <p class="heading-xsmall heading-top">
-                                LAST MONTH’S FEATURED STORY
-                            </p>
-                            <h1 class="heading-large">
-                                HAZY FULL MOON OF APPALACHIA
-                            </h1>
-                            <p class="heading-xsmall date-author">
-                                <span class="copy-light date"
-                                    >March 2nd 2020</span
-                                >
-                                by John Appleseed
-                            </p>
-                            <p class="copy-light body-copy">
-                                The dissected plateau area, while not actually
-                                made up of geological mountains, is popularly
-                                called "mountains," especially in eastern
-                                Kentucky and West Virginia, and while the ridges
-                                are not high, the terrain is extremely rugged.
-                            </p>
-                            <div class="btn-arrow">
-                                <span class="heading-xsmall"
-                                    >READ THE STORY</span
-                                >
-                                <div class="arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="43"
-                                        height="14"
-                                    >
-                                        <g
-                                            fill="none"
-                                            fill-rule="evenodd"
-                                            stroke="#FFF"
-                                        >
-                                            <path
-                                                d="M0 7h41.864M35.428 1l6 6-6 6"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="grid-container stories-wrapper stories-page">
-                    <a href="#">
-                        <div class="tile tile-one bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        April 16th 2020
-                                    </p>
-                                    <h4 class="heading-small">The Mountains</h4>
-                                    <p class="heading-xsmall author">
-                                        by John Appleseed
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-two bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        April 14th 2020
-                                    </p>
-                                    <h4 class="heading-small">
-                                        Sunset Cityscapes
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Benjamin Cruz
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-three bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        April 11th 2020
-                                    </p>
-                                    <h4 class="heading-small">
-                                        18 Days Voyage
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Alexei Borodin
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-four bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">April 9th 2020</p>
-                                    <h4 class="heading-small">
-                                        Architecturals
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Samantha Brooke
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-five bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">April 7th 2020</p>
-                                    <h4 class="heading-small">
-                                        World Tour 2019
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Timothy Wagner
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-six bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">April 3rd 2020</p>
-                                    <h4 class="heading-small">
-                                        Unforseen Corners
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by William Malcolm
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-seven bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        March 29th 2020
-                                    </p>
-                                    <h4 class="heading-small">
-                                        King on Africa: Part II
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Tim Hillenburg
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-eight bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        March 21st 2020
-                                    </p>
-                                    <h4 class="heading-small">
-                                        The Trip to Nowhere
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Felicia Rourke
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-nine bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        March 19th 2020
-                                    </p>
-                                    <h4 class="heading-small">
-                                        Rage of The Sea
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Mohammed Abdul
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-ten bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        March 16th 2020
-                                    </p>
-                                    <h4 class="heading-small">Running Free</h4>
-                                    <p class="heading-xsmall author">
-                                        by Michelle Carroll
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-eleven bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        March 11th 2020
-                                    </p>
-                                    <h4 class="heading-small">
-                                        Behind the Waves
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Lamarr Wilson
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-twelve bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">March 9th 2020</p>
-                                    <h4 class="heading-small">Calm Waters</h4>
-                                    <p class="heading-xsmall author">
-                                        by Samantha Brooke
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-thirteen bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">March 5th 2020</p>
-                                    <h4 class="heading-small">The Milky Way</h4>
-                                    <p class="heading-xsmall author">
-                                        by Benjamin Cruz
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-fourteen bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">March 4th 2020</p>
-                                    <h4 class="heading-small">
-                                        Night at The Dark Forest
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Mohammed Abdul
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-fifteen bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">March 1st 2020</p>
-                                    <h4 class="heading-small">
-                                        Somwarpet’s Beauty
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by Michelle Carroll
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="tile tile-sixteen bg-gradient">
-                            <div class="copy-outer">
-                                <div class="copy-inner">
-                                    <p class="heading-xsmall">
-                                        February 25th 2020
-                                    </p>
-                                    <h4 class="heading-small">
-                                        Land of Dreams
-                                    </h4>
-                                    <p class="heading-xsmall author">
-                                        by William Malcolm
-                                    </p>
-                                    <div class="btn-arrow">
-                                        <span class="heading-xsmall"
-                                            >READ STORY</span
-                                        >
-                                        <div class="arrow">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="43"
-                                                height="14"
-                                            >
-                                                <g
-                                                    fill="none"
-                                                    fill-rule="evenodd"
-                                                    stroke="#FFF"
-                                                >
-                                                    <path
-                                                        d="M0 7h41.864M35.428 1l6 6-6 6"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </section>
+          </div>
+        </div>
+      </section>
+      <section class="grid-container stories-wrapper stories-page">
+        <a href="#">
+          <div class="tile tile-one bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  April 16th 2020
+                </p>
+                <h4 class="heading-small">The Mountains</h4>
+                <p class="heading-xsmall author">
+                  by John Appleseed
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-two bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  April 14th 2020
+                </p>
+                <h4 class="heading-small">
+                  Sunset Cityscapes
+                </h4>
+                <p class="heading-xsmall author">
+                  by Benjamin Cruz
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-three bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  April 11th 2020
+                </p>
+                <h4 class="heading-small">
+                  18 Days Voyage
+                </h4>
+                <p class="heading-xsmall author">
+                  by Alexei Borodin
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-four bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">April 9th 2020</p>
+                <h4 class="heading-small">
+                  Architecturals
+                </h4>
+                <p class="heading-xsmall author">
+                  by Samantha Brooke
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-five bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">April 7th 2020</p>
+                <h4 class="heading-small">
+                  World Tour 2019
+                </h4>
+                <p class="heading-xsmall author">
+                  by Timothy Wagner
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-six bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">April 3rd 2020</p>
+                <h4 class="heading-small">
+                  Unforseen Corners
+                </h4>
+                <p class="heading-xsmall author">
+                  by William Malcolm
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-seven bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  March 29th 2020
+                </p>
+                <h4 class="heading-small">
+                  King on Africa: Part II
+                </h4>
+                <p class="heading-xsmall author">
+                  by Tim Hillenburg
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-eight bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  March 21st 2020
+                </p>
+                <h4 class="heading-small">
+                  The Trip to Nowhere
+                </h4>
+                <p class="heading-xsmall author">
+                  by Felicia Rourke
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-nine bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  March 19th 2020
+                </p>
+                <h4 class="heading-small">
+                  Rage of The Sea
+                </h4>
+                <p class="heading-xsmall author">
+                  by Mohammed Abdul
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-ten bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  March 16th 2020
+                </p>
+                <h4 class="heading-small">Running Free</h4>
+                <p class="heading-xsmall author">
+                  by Michelle Carroll
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-eleven bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  March 11th 2020
+                </p>
+                <h4 class="heading-small">
+                  Behind the Waves
+                </h4>
+                <p class="heading-xsmall author">
+                  by Lamarr Wilson
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-twelve bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">March 9th 2020</p>
+                <h4 class="heading-small">Calm Waters</h4>
+                <p class="heading-xsmall author">
+                  by Samantha Brooke
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-thirteen bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">March 5th 2020</p>
+                <h4 class="heading-small">The Milky Way</h4>
+                <p class="heading-xsmall author">
+                  by Benjamin Cruz
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-fourteen bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">March 4th 2020</p>
+                <h4 class="heading-small">
+                  Night at The Dark Forest
+                </h4>
+                <p class="heading-xsmall author">
+                  by Mohammed Abdul
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-fifteen bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">March 1st 2020</p>
+                <h4 class="heading-small">
+                  Somwarpet’s Beauty
+                </h4>
+                <p class="heading-xsmall author">
+                  by Michelle Carroll
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="tile tile-sixteen bg-gradient">
+            <div class="copy-outer">
+              <div class="copy-inner">
+                <p class="heading-xsmall">
+                  February 25th 2020
+                </p>
+                <h4 class="heading-small">
+                  Land of Dreams
+                </h4>
+                <p class="heading-xsmall author">
+                  by William Malcolm
+                </p>
+                <div class="btn-arrow">
+                  <span class="heading-xsmall">READ STORY</span>
+                  <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                      <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                        <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
 
-                <footer class="footer">
-                    <div class="inner">
-                        <div class="left">
-                            <div class="socials">
-                                <img
-                                    src="./assets/images/shared/desktop/logo-white.svg"
-                                    alt="Logo"
-                                    class="logo"
-                                />
-                                <div class="social-links">
-                                    <a href="facebook.com" class="social-link">
-                                        <img
-                                            src="./assets/images/shared/desktop/facebook.svg"
-                                            alt="facebook icon"
-                                        />
-                                    </a>
-                                    <a href="youtube.com" class="social-link">
-                                        <img
-                                            src="./assets/images/shared/desktop/youtube.svg"
-                                            alt="youtube icon"
-                                    /></a>
-                                    <a href="twitter.com" class="social-link">
-                                        <img
-                                            src="./assets/images/shared/desktop/twitter.svg"
-                                            alt="twitter icon"
-                                    /></a>
-                                    <a href="pinterest.com" class="social-link">
-                                        <img
-                                            src="./assets/images/shared/desktop/pinterest.svg"
-                                            alt="pinterest icon"
-                                    /></a>
-                                    <a href="instagram.com" class="social-link">
-                                        <img
-                                            src="./assets/images/shared/desktop/instagram.svg"
-                                            alt="instagram icon"
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="menu-links">
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="index.html"
-                                            class="heading-xsmall"
-                                            >home</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="stories.html"
-                                            class="heading-xsmall"
-                                            >stories</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="features.html"
-                                            class="heading-xsmall"
-                                            >features</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="pricing.html"
-                                            class="heading-xsmall"
-                                            >pricing</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="btn-arrow">
-                                <span class="heading-xsmall"
-                                    >GET AN INVITE</span
-                                >
-                                <div class="arrow">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="43"
-                                        height="14"
-                                    >
-                                        <g
-                                            fill="none"
-                                            fill-rule="evenodd"
-                                            stroke="#FFF"
-                                        >
-                                            <path
-                                                d="M0 7h41.864M35.428 1l6 6-6 6"
-                                            />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="copyright">
-                                <p>Copyright 2019. All Rights Reserved</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </article>
-        </main>
-    </body>
+      <footer class="footer">
+        <div class="inner">
+          <div class="left">
+            <div class="socials">
+              <img src="./assets/images/shared/desktop/logo-white.svg" alt="Logo" class="logo" />
+              <div class="social-links">
+                <a href="facebook.com" class="social-link">
+                  <img src="./assets/images/shared/desktop/facebook.svg" alt="facebook icon" />
+                </a>
+                <a href="youtube.com" class="social-link">
+                  <img src="./assets/images/shared/desktop/youtube.svg" alt="youtube icon" /></a>
+                <a href="twitter.com" class="social-link">
+                  <img src="./assets/images/shared/desktop/twitter.svg" alt="twitter icon" /></a>
+                <a href="pinterest.com" class="social-link">
+                  <img src="./assets/images/shared/desktop/pinterest.svg" alt="pinterest icon" /></a>
+                <a href="instagram.com" class="social-link">
+                  <img src="./assets/images/shared/desktop/instagram.svg" alt="instagram icon" /></a>
+              </div>
+            </div>
+            <div class="menu-links">
+              <ul>
+                <li>
+                  <a href="index.html" class="heading-xsmall">home</a>
+                </li>
+                <li>
+                  <a href="stories.html" class="heading-xsmall">stories</a>
+                </li>
+                <li>
+                  <a href="features.html" class="heading-xsmall">features</a>
+                </li>
+                <li>
+                  <a href="pricing.html" class="heading-xsmall">pricing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="btn-arrow">
+              <span class="heading-xsmall">GET AN INVITE</span>
+              <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                  <g fill="none" fill-rule="evenodd" stroke="#FFF">
+                    <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>Copyright 2019. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+</body>
+
 </html>

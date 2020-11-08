@@ -33,10 +33,16 @@
     @include md {
       padding: 40px;
     }
+    @include sm {
+      flex-direction: column;
+    }
     .left {
       display: flex;
       @include md {
         flex-direction: column;
+      }
+      @include sm {
+        padding-bottom: 120px;
       }
       .socials {
         display: flex;
@@ -46,11 +52,18 @@
         @include md {
           align-items: flex-start;
         }
+        @include sm {
+          margin-right: 0;
+          align-items: center;
+        }
         .logo {
           padding-top: 10px;
           padding-bottom: 80px;
           @include md {
             padding-bottom: 140px;
+          }
+          @include sm {
+            padding-bottom: 30px;
           }
         }
         .social-links {
@@ -65,9 +78,16 @@
         @include md {
           transform: translate(0, -170px);
         }
+        @include sm {
+          transform: translate(0, 0);
+        }
         ul {
           @include md {
             display: flex;
+          }
+          @include sm {
+            @include centreContent;
+            flex-direction: column;
           }
           li {
             color: $white;
@@ -75,6 +95,10 @@
             @include md {
               padding-bottom: 0;
               padding-right: 27px;
+            }
+            @include sm {
+              padding-right: 0;
+              padding-bottom: 20px;
             }
             a {
               &:hover {
@@ -97,6 +121,9 @@
         @include md {
           padding-bottom: 150px;
         }
+        @include sm {
+          padding-bottom: 20px;
+        }
         .heading-xsmall {
           padding-right: 20px;
         }
@@ -104,6 +131,9 @@
       .copyright {
         @include md {
           transform: translate(0, -30px);
+        }
+        @include sm {
+          transform: translate(0, 0);
         }
         p {
           opacity: 0.5;

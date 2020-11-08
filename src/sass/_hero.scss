@@ -5,11 +5,13 @@
     height: 100%;
     width: 100%;
     position: relative;
-
     .copy-inner {
       padding: 175px 0;
       max-width: 400px;
       margin: 0 auto;
+      @include sm {
+        padding: 80px 20px;
+      }
       .heading-large {
         padding-bottom: 20px;
       }
@@ -33,6 +35,10 @@
     @include md {
       grid-template-columns: 2fr 1fr;
     }
+    @include sm {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     .copy-outer {
       background-color: $black;
       &:before {
@@ -46,8 +52,18 @@
         @include md {
           top: 26%;
         }
+        @include sm {
+          top: 0;
+          width: 128px;
+          height: 6px;
+          left: 20px;
+          background: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+        }
       }
       .copy-inner {
+        @include sm {
+          padding: 80px 20px;
+        }
         .heading-large,
         .copy {
           color: $white;
@@ -67,6 +83,11 @@
       @include md {
         background-image: url("../assets/images/home/tablet/create-and-share.jpg");
       }
+      @include sm {
+        height: 100%;
+        min-height: 300px;
+        background-image: url("../assets/images/home/mobile/create-and-share.jpg");
+      }
     }
   }
   &.row-two {
@@ -74,10 +95,19 @@
     @include md {
       grid-template-columns: 1fr 2fr;
     }
+    @include sm {
+      display: flex;
+      flex-direction: column;
+    }
     .img-outer {
       background-image: url("../assets/images/home/desktop/beautiful-stories.jpg");
       @include md {
         background-image: url("../assets/images/home/tablet/beautiful-stories.jpg");
+      }
+      @include sm {
+        height: 100%;
+        min-height: 300px;
+        background-image: url("../assets/images/home/mobile/beautiful-stories.jpg");
       }
     }
   }
@@ -86,10 +116,19 @@
     @include md {
       grid-template-columns: 2fr 1fr;
     }
+    @include sm {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     .img-outer {
       background-image: url("../assets/images/home/desktop/designed-for-everyone.jpg");
       @include md {
         background-image: url("../assets/images/home/tablet/designed-for-everyone.jpg");
+      }
+      @include sm {
+        height: 100%;
+        min-height: 300px;
+        background-image: url("../assets/images/home/mobile/designed-for-everyone.jpg");
       }
     }
   }
@@ -99,6 +138,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   @include md {
     grid-template-columns: 1fr 1fr;
+  }
+  @include sm {
+    grid-template-columns: 1fr;
   }
   .tile {
     height: 100%;
@@ -128,6 +170,9 @@
         padding: 460px 20px 40px;
         max-width: 400px;
         margin: 0 auto;
+        @include sm {
+          padding: 240px 20px 40px;
+        }
         .heading-small,
         .heading-xsmall,
         .btn-arrow span {
@@ -159,15 +204,27 @@
     }
     &.tile-one {
       background-image: url("../assets/images/stories/desktop/mountains.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/mountains.jpg");
+      }
     }
     &.tile-two {
       background-image: url("../assets/images/stories/desktop/cityscapes.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/cityscapes.jpg");
+      }
     }
     &.tile-three {
       background-image: url("../assets/images/stories/desktop/18-days-voyage.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/18-days-voyage.jpg");
+      }
     }
     &.tile-four {
       background-image: url("../assets/images/stories/desktop/architecturals.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/architecturals.jpg");
+      }
     }
   }
 }
@@ -178,6 +235,10 @@
   background-size: cover;
   @include md {
     background: url("../assets/images/stories/tablet/moon-of-appalacia.jpg")
+      no-repeat center center;
+  }
+  @include sm {
+    background: url("../assets/images/stories/mobile/moon-of-appalacia.jpg")
       no-repeat center center;
   }
   .inner {
@@ -272,16 +333,25 @@
     @include md {
       flex-direction: column;
     }
+    @include sm {
+      padding: 60px 40px;
+    }
     .tile {
       max-width: 350px;
       min-height: 240px;
       padding-right: 30px;
       &:nth-of-type(3) {
         padding-right: 0;
+        @include sm {
+          padding-bottom: 0;
+        }
       }
       @include md {
         padding-right: 0;
         padding-bottom: 80px;
+      }
+      @include sm {
+        padding-bottom: 60px;
       }
       .copy-outer {
         text-align: center;
