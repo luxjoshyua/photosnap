@@ -53,11 +53,16 @@
           top: 26%;
         }
         @include sm {
-          top: 0;
-          width: 128px;
-          height: 6px;
-          left: 20px;
-          background: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+          top: 0 !important;
+          width: 128px !important;
+          height: 6px !important;
+          left: 20px !important;
+          background: linear-gradient(
+            to right,
+            #ffc593,
+            #bc7198,
+            #5a77ff
+          ) !important;
         }
       }
       .copy-inner {
@@ -235,11 +240,11 @@
   background-size: cover;
   @include md {
     background: url("../assets/images/stories/tablet/moon-of-appalacia.jpg")
-      no-repeat center center;
+      no-repeat center center cover;
   }
   @include sm {
     background: url("../assets/images/stories/mobile/moon-of-appalacia.jpg")
-      no-repeat center center;
+      no-repeat center center cover;
   }
   .inner {
     width: 100%;
@@ -276,43 +281,112 @@
   }
 }
 
+.stories-hero-mobile {
+  .img-outer {
+    background: url("../assets/images/stories/mobile/moon-of-appalacia.jpg")
+      no-repeat center center;
+    min-height: 300px;
+    height: 100%;
+  }
+  .inner {
+    background-color: $black;
+    .copy-outer {
+      padding: 40px 20px;
+      color: $white;
+      @include sm {
+        padding: 60px 20px;
+      }
+      .heading-xsmall {
+        padding-bottom: 20px;
+      }
+      .heading-large {
+        padding-bottom: 10px;
+      }
+      .body-copy {
+        padding-bottom: 20px;
+      }
+      .btn-arrow {
+        .heading-xsmall {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
 .stories-page {
   .tile {
     &.tile-five {
       background-image: url("../assets/images/stories/desktop/world-tour.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/world-tour.jpg");
+      }
     }
     &.tile-six {
       background-image: url("../assets/images/stories/desktop/unforeseen-corners.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/unforeseen-corners.jpg");
+      }
     }
     &.tile-seven {
       background-image: url("../assets/images/stories/desktop/king-on-africa.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/king-on-africa.jpg");
+      }
     }
     &.tile-eight {
       background-image: url("../assets/images/stories/desktop/trip-to-nowhere.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/trip-to-nowhere.jpg");
+      }
     }
     &.tile-nine {
       background-image: url("../assets/images/stories/desktop/rage-of-the-sea.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/rage-of-the-sea.jpg");
+      }
     }
     &.tile-ten {
       background-image: url("../assets/images/stories/desktop/running-free.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/running-free.jpg");
+      }
     }
     &.tile-eleven {
       background-image: url("../assets/images/stories/desktop/behind-the-waves.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/behind-the-waves.jpg");
+      }
     }
     &.tile-twelve {
       background-image: url("../assets/images/stories/desktop/calm-waters.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/calm-waters.jpg");
+      }
     }
     &.tile-thirteen {
       background-image: url("../assets/images/stories/desktop/milky-way.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/milky-way.jpg");
+      }
     }
     &.tile-fourteen {
       background-image: url("../assets/images/stories/desktop/dark-forest.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/dark-forest.jpg");
+      }
     }
     &.tile-fifteen {
       background-image: url("../assets/images/stories/desktop/somwarpet.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/desktop/somwarpet.jpg");
+      }
     }
     &.tile-sixteen {
       background-image: url("../assets/images/stories/desktop/land-of-dreams.jpg");
+      @include sm {
+        background-image: url("../assets/images/stories/mobile/land-of-dreams.jpg");
+      }
     }
     .copy-outer {
       .copy-inner {
