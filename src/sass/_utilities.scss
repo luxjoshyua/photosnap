@@ -23,3 +23,15 @@
 @mixin colorGradient {
   background: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
 }
+
+.hide-mobile {
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.hide-medium-large {
+  @media screen and (min-width: 701px) {
+    display: none;
+  }
+}
