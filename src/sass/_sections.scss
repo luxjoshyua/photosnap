@@ -23,6 +23,9 @@
       @include md {
         background-image: url("../assets/images/features/tablet/hero-features-tablet.jpg");
       }
+      @include sm {
+        background-image: url("../assets/images/features/mobile/hero.jpg");
+      }
     }
   }
 }
@@ -137,6 +140,9 @@
   max-height: 720px;
   @include md {
     max-height: 1540px;
+  }
+  @include sm {
+    margin-bottom: 40px;
   }
   &-monthly {
     &.inactive-monthly {
@@ -331,6 +337,51 @@
       }
       &.x-move-tablet {
         transform: translateX(-60px);
+      }
+    }
+  }
+}
+
+.pricing-table-small {
+  padding: 60px 40px;
+  .heading-wrapper {
+    text-align: left;
+    padding-bottom: 24px;
+    .heading {
+      font-size: 1.2rem;
+    }
+  }
+  .table-wrapper {
+    .table-inner {
+      display: flex;
+      flex-direction: column;
+      .row {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px 0 10px;
+        .heading {
+          text-transform: uppercase;
+          font-size: 1.4rem;
+          font-weight: 700;
+          letter-spacing: 0.6px;
+          padding-bottom: 10px;
+        }
+        .heading-light {
+          opacity: 0.5;
+        }
+        .row-three {
+          display: flex;
+          justify-content: space-between;
+        }
+        .row-tick {
+          display: flex;
+          border-bottom: 1px solid #d8d8d8;
+          padding-bottom: 20px;
+        }
+      }
+      .row-one {
+        border-bottom: 2px solid $black;
+        padding-bottom: 10px;
       }
     }
   }
